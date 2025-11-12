@@ -468,4 +468,4 @@ MIT
 
 ---
 
-Made with ❤️ by the Contentstack team
+Made with ❤️ by Tim Benniks
