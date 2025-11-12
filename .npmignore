@@ -1,0 +1,12 @@
+test/
+src/
+tsconfig.json
+.eslintrc.json
+.mocharc.json
+*.log
+.DS_Store
+.env
+coverage/
+.nyc_output/
+node_modules/
+

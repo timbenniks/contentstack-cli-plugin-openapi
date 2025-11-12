@@ -1,0 +1,64 @@
+{
+  "name": "@contentstack/cli-plugin-openapi",
+  "version": "1.0.0",
+  "description": "Generate OpenAPI 3.1 JSON specifications for Contentstack stacks",
+  "author": "Contentstack",
+  "license": "MIT",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "oclif": {
+    "commands": "./lib/commands",
+    "bin": "csdx",
+    "plugins": []
+  },
+  "files": [
+    "/lib",
+    "/oclif.manifest.json"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "prepack": "npm run build && oclif manifest",
+    "test": "mocha --forbid-only \"test/**/*.test.ts\"",
+    "lint": "eslint . --ext .ts",
+    "lint:fix": "eslint . --ext .ts --fix"
+  },
+  "dependencies": {
+    "@apidevtools/swagger-parser": "^10.1.0",
+    "@contentstack/cli-command": "^1.6.1",
+    "@contentstack/cli-utilities": "^1.14.4",
+    "@contentstack/management": "^1.20.0",
+    "@oclif/core": "^3.0.0",
+    "fs-extra": "^11.2.0",
+    "zod": "^3.22.4"
+  },
+  "devDependencies": {
+    "@oclif/test": "^3.0.0",
+    "@types/fs-extra": "^11.0.4",
+    "@types/mocha": "^10.0.6",
+    "@types/node": "^20.11.0",
+    "@types/sinon": "^10.0.6",
+    "chai": "^4.3.10",
+    "sinon": "^17.0.1",
+    "@typescript-eslint/eslint-plugin": "^6.19.0",
+    "@typescript-eslint/parser": "^6.19.0",
+    "eslint": "^8.56.0",
+    "eslint-config-oclif": "^5.0.0",
+    "mocha": "^10.3.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.3.3"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/contentstack/contentstack-cli-plugin-openapi"
+  },
+  "keywords": [
+    "contentstack",
+    "cli",
+    "openapi",
+    "swagger",
+    "api-specification"
+  ]
+}
